@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Github } from 'lucide-react';
 import i18n from '@/lib/i18n/config';
 import { BottomNavigation } from '@/components/layout/BottomNavigation';
 import { ToastProvider } from '@/components/common/Toast';
@@ -61,8 +62,39 @@ export function RootLayoutClient({ children }: { children: React.ReactNode }) {
               </div>
             </div>
             {children}
-            <div className="px-4 pt-8 text-center">
-              <p className="text-sm text-gray-500 dark:text-gray-400">Made by HabebaEhab</p>
+            <div className="px-4 pt-8">
+              <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 rounded-[24px] border border-gray-200/70 bg-white/70 px-5 py-5 text-center shadow-sm backdrop-blur dark:border-white/10 dark:bg-zinc-900/60">
+                <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-3">
+                    <p className="text-sm font-medium text-gray-600 dark:text-gray-300">For contribute</p>
+                    <a
+                      href="https://github.com/codestcode/SugarSense"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Open SugarSense GitHub repository"
+                      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition hover:border-blue-300 hover:text-blue-600 dark:border-white/10 dark:bg-zinc-950 dark:text-gray-200 dark:hover:border-blue-400 dark:hover:text-blue-300"
+                    >
+                      <Github className="h-5 w-5" />
+                    </a>
+                  </div>
+                  <a
+                    href="https://www.habebaehab.tech"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open HabebaEhab website"
+                    className="inline-flex items-center gap-3 rounded-full bg-black px-4 py-2 text-white transition hover:bg-zinc-800"
+                  >
+                    <span className="text-sm font-medium text-white">By HabebaEhab</span>
+                    <Image
+                      src="/logohabeba.svg"
+                      alt="HabebaEhab"
+                      width={34}
+                      height={34}
+                      className="h-8 w-8"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <BottomNavigation />
