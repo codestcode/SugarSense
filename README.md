@@ -1,6 +1,6 @@
 # SugarSense
 
-SugarSense is a mobile-first diabetes tracking app built with Next.js, React, Tailwind CSS, and Zustand. It helps users log glucose readings, insulin doses, meals, moods, and symptoms, then turns that data into readable trends, charts, and AI-supported insights.
+SugarSense is a AI-Powered mobile-first diabetes tracking app built with Next.js, React, Tailwind CSS, and Zustand. It helps users log glucose readings, insulin doses, meals, moods, and symptoms, then turns that data into readable trends, charts, and AI-supported insights.
 
 This project is local-first by default. Data is stored in the browser, the UI is optimized for phones, and the app includes light/dark mode, English/Arabic support, backup/restore, and an AI assistant with safety guardrails.
 
