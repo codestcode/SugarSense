@@ -1,0 +1,471 @@
+{
+  "glucose": [
+    {
+      "id": "g-001",
+      "value": 108,
+      "meal_relation": "before_breakfast",
+      "notes": "Woke up rested",
+      "reading_time": "2026-05-11T06:45:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-11T06:45:00.000Z"
+    },
+    {
+      "id": "g-002",
+      "value": 164,
+      "meal_relation": "after_breakfast",
+      "notes": "Toast and jam",
+      "reading_time": "2026-05-11T09:00:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-11T09:00:00.000Z"
+    },
+    {
+      "id": "g-003",
+      "value": 92,
+      "meal_relation": "before_lunch",
+      "notes": "",
+      "reading_time": "2026-05-11T12:20:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-11T12:20:00.000Z"
+    },
+    {
+      "id": "g-004",
+      "value": 178,
+      "meal_relation": "after_lunch",
+      "notes": "Rice bowl",
+      "reading_time": "2026-05-11T14:30:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-11T14:30:00.000Z"
+    },
+    {
+      "id": "g-005",
+      "value": 74,
+      "meal_relation": "before_dinner",
+      "notes": "Felt a bit shaky",
+      "reading_time": "2026-05-11T18:10:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-11T18:10:00.000Z"
+    },
+    {
+      "id": "g-006",
+      "value": 196,
+      "meal_relation": "after_dinner",
+      "notes": "Pasta dinner",
+      "reading_time": "2026-05-11T20:45:00.000Z",
+      "status": "high",
+      "created_at": "2026-05-11T20:45:00.000Z"
+    },
+    {
+      "id": "g-007",
+      "value": 112,
+      "meal_relation": "before_breakfast",
+      "notes": "",
+      "reading_time": "2026-05-12T06:50:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-12T06:50:00.000Z"
+    },
+    {
+      "id": "g-008",
+      "value": 171,
+      "meal_relation": "after_breakfast",
+      "notes": "Cereal and banana",
+      "reading_time": "2026-05-12T08:55:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-12T08:55:00.000Z"
+    },
+    {
+      "id": "g-009",
+      "value": 88,
+      "meal_relation": "before_lunch",
+      "notes": "",
+      "reading_time": "2026-05-12T12:10:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-12T12:10:00.000Z"
+    },
+    {
+      "id": "g-010",
+      "value": 184,
+      "meal_relation": "after_lunch",
+      "notes": "Burger and fries",
+      "reading_time": "2026-05-12T14:20:00.000Z",
+      "status": "high",
+      "created_at": "2026-05-12T14:20:00.000Z"
+    },
+    {
+      "id": "g-011",
+      "value": 82,
+      "meal_relation": "before_dinner",
+      "notes": "",
+      "reading_time": "2026-05-12T18:25:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-12T18:25:00.000Z"
+    },
+    {
+      "id": "g-012",
+      "value": 205,
+      "meal_relation": "after_dinner",
+      "notes": "Pizza night",
+      "reading_time": "2026-05-12T21:00:00.000Z",
+      "status": "high",
+      "created_at": "2026-05-12T21:00:00.000Z"
+    },
+    {
+      "id": "g-013",
+      "value": 98,
+      "meal_relation": "before_breakfast",
+      "notes": "Slept well",
+      "reading_time": "2026-05-13T06:40:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-13T06:40:00.000Z"
+    },
+    {
+      "id": "g-014",
+      "value": 149,
+      "meal_relation": "after_breakfast",
+      "notes": "Eggs and toast",
+      "reading_time": "2026-05-13T08:50:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-13T08:50:00.000Z"
+    },
+    {
+      "id": "g-015",
+      "value": 90,
+      "meal_relation": "before_lunch",
+      "notes": "",
+      "reading_time": "2026-05-13T12:15:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-13T12:15:00.000Z"
+    },
+    {
+      "id": "g-016",
+      "value": 166,
+      "meal_relation": "after_lunch",
+      "notes": "Chicken wrap",
+      "reading_time": "2026-05-13T14:15:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-13T14:15:00.000Z"
+    },
+    {
+      "id": "g-017",
+      "value": 76,
+      "meal_relation": "before_dinner",
+      "notes": "Hungry before dinner",
+      "reading_time": "2026-05-13T18:00:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-13T18:00:00.000Z"
+    },
+    {
+      "id": "g-018",
+      "value": 189,
+      "meal_relation": "after_dinner",
+      "notes": "Rice and chicken",
+      "reading_time": "2026-05-13T20:40:00.000Z",
+      "status": "high",
+      "created_at": "2026-05-13T20:40:00.000Z"
+    },
+    {
+      "id": "g-019",
+      "value": 102,
+      "meal_relation": "before_breakfast",
+      "notes": "",
+      "reading_time": "2026-05-14T06:55:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-14T06:55:00.000Z"
+    },
+    {
+      "id": "g-020",
+      "value": 158,
+      "meal_relation": "after_breakfast",
+      "notes": "",
+      "reading_time": "2026-05-14T09:05:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-14T09:05:00.000Z"
+    },
+    {
+      "id": "g-021",
+      "value": 85,
+      "meal_relation": "before_lunch",
+      "notes": "",
+      "reading_time": "2026-05-14T12:00:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-14T12:00:00.000Z"
+    },
+    {
+      "id": "g-022",
+      "value": 176,
+      "meal_relation": "after_lunch",
+      "notes": "Office lunch",
+      "reading_time": "2026-05-14T14:10:00.000Z",
+      "status": "normal",
+      "created_at": "2026-05-14T14:10:00.000Z"
+    },
+    {
+      "id": "g-023",
+      "value": 69,
+      "meal_relation": "random",
+      "notes": "Late afternoon low",
+      "reading_time": "2026-05-14T16:50:00.000Z",
+      "status": "low",
+      "created_at": "2026-05-14T16:50:00.000Z"
+    },
+    {
+      "id": "g-024",
+      "value": 198,
+      "meal_relation": "after_dinner",
+      "notes": "Dessert after dinner",
+      "reading_time": "2026-05-14T21:15:00.000Z",
+      "status": "high",
+      "created_at": "2026-05-14T21:15:00.000Z"
+    }
+  ],
+  "insulin": [
+    {
+      "id": "i-001",
+      "insulin_type": "rapid_acting",
+      "dose_context": "before_breakfast",
+      "units": 8,
+      "notes": "",
+      "dose_time": "2026-05-11T06:35:00.000Z",
+      "created_at": "2026-05-11T06:35:00.000Z"
+    },
+    {
+      "id": "i-002",
+      "insulin_type": "rapid_acting",
+      "dose_context": "before_lunch",
+      "units": 7,
+      "notes": "",
+      "dose_time": "2026-05-11T12:05:00.000Z",
+      "created_at": "2026-05-11T12:05:00.000Z"
+    },
+    {
+      "id": "i-003",
+      "insulin_type": "rapid_acting",
+      "dose_context": "before_dinner",
+      "units": 9,
+      "notes": "",
+      "dose_time": "2026-05-11T18:00:00.000Z",
+      "created_at": "2026-05-11T18:00:00.000Z"
+    },
+    {
+      "id": "i-004",
+      "insulin_type": "long_acting",
+      "dose_context": "before_sleep",
+      "units": 12,
+      "notes": "Night dose",
+      "dose_time": "2026-05-11T22:30:00.000Z",
+      "created_at": "2026-05-11T22:30:00.000Z"
+    },
+    {
+      "id": "i-005",
+      "insulin_type": "rapid_acting",
+      "dose_context": "before_breakfast",
+      "units": 8,
+      "notes": "",
+      "dose_time": "2026-05-12T06:40:00.000Z",
+      "created_at": "2026-05-12T06:40:00.000Z"
+    },
+    {
+      "id": "i-006",
+      "insulin_type": "rapid_acting",
+      "dose_context": "before_lunch",
+      "units": 7,
+      "notes": "",
+      "dose_time": "2026-05-12T12:00:00.000Z",
+      "created_at": "2026-05-12T12:00:00.000Z"
+    },
+    {
+      "id": "i-007",
+      "insulin_type": "rapid_acting",
+      "dose_context": "before_dinner",
+      "units": 10,
+      "notes": "",
+      "dose_time": "2026-05-12T18:10:00.000Z",
+      "created_at": "2026-05-12T18:10:00.000Z"
+    },
+    {
+      "id": "i-008",
+      "insulin_type": "long_acting",
+      "dose_context": "before_sleep",
+      "units": 12,
+      "notes": "",
+      "dose_time": "2026-05-12T22:25:00.000Z",
+      "created_at": "2026-05-12T22:25:00.000Z"
+    },
+    {
+      "id": "i-009",
+      "insulin_type": "rapid_acting",
+      "dose_context": "before_breakfast",
+      "units": 7,
+      "notes": "",
+      "dose_time": "2026-05-13T06:30:00.000Z",
+      "created_at": "2026-05-13T06:30:00.000Z"
+    },
+    {
+      "id": "i-010",
+      "insulin_type": "rapid_acting",
+      "dose_context": "before_lunch",
+      "units": 7,
+      "notes": "",
+      "dose_time": "2026-05-13T12:00:00.000Z",
+      "created_at": "2026-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "i-011",
+      "insulin_type": "rapid_acting",
+      "dose_context": "before_dinner",
+      "units": 8,
+      "notes": "",
+      "dose_time": "2026-05-13T17:55:00.000Z",
+      "created_at": "2026-05-13T17:55:00.000Z"
+    },
+    {
+      "id": "i-012",
+      "insulin_type": "long_acting",
+      "dose_context": "before_sleep",
+      "units": 12,
+      "notes": "",
+      "dose_time": "2026-05-13T22:20:00.000Z",
+      "created_at": "2026-05-13T22:20:00.000Z"
+    }
+  ],
+  "meals": [
+    {
+      "id": "m-001",
+      "title": "Toast and jam",
+      "description": "White toast, jam, tea",
+      "tag": "breakfast",
+      "carbs_estimate": 42,
+      "meal_time": "2026-05-11T07:15:00.000Z",
+      "created_at": "2026-05-11T07:15:00.000Z"
+    },
+    {
+      "id": "m-002",
+      "title": "Rice bowl",
+      "description": "Rice, chicken, sauce",
+      "tag": "lunch",
+      "carbs_estimate": 68,
+      "meal_time": "2026-05-11T12:45:00.000Z",
+      "created_at": "2026-05-11T12:45:00.000Z"
+    },
+    {
+      "id": "m-003",
+      "title": "Pasta dinner",
+      "description": "Pasta with tomato sauce",
+      "tag": "dinner",
+      "carbs_estimate": 74,
+      "meal_time": "2026-05-11T19:00:00.000Z",
+      "created_at": "2026-05-11T19:00:00.000Z"
+    },
+    {
+      "id": "m-004",
+      "title": "Banana cereal",
+      "description": "Cereal, milk, banana",
+      "tag": "breakfast",
+      "carbs_estimate": 48,
+      "meal_time": "2026-05-12T07:10:00.000Z",
+      "created_at": "2026-05-12T07:10:00.000Z"
+    },
+    {
+      "id": "m-005",
+      "title": "Burger meal",
+      "description": "Burger and fries",
+      "tag": "lunch",
+      "carbs_estimate": 72,
+      "meal_time": "2026-05-12T12:50:00.000Z",
+      "created_at": "2026-05-12T12:50:00.000Z"
+    },
+    {
+      "id": "m-006",
+      "title": "Pizza night",
+      "description": "2 pizza slices and soda",
+      "tag": "dinner",
+      "carbs_estimate": 81,
+      "meal_time": "2026-05-12T19:10:00.000Z",
+      "created_at": "2026-05-12T19:10:00.000Z"
+    },
+    {
+      "id": "m-007",
+      "title": "Egg breakfast",
+      "description": "Eggs, toast, cucumber",
+      "tag": "breakfast",
+      "carbs_estimate": 30,
+      "meal_time": "2026-05-13T07:05:00.000Z",
+      "created_at": "2026-05-13T07:05:00.000Z"
+    },
+    {
+      "id": "m-008",
+      "title": "Chicken wrap",
+      "description": "Chicken wrap and yogurt",
+      "tag": "lunch",
+      "carbs_estimate": 46,
+      "meal_time": "2026-05-13T12:45:00.000Z",
+      "created_at": "2026-05-13T12:45:00.000Z"
+    },
+    {
+      "id": "m-009",
+      "title": "Rice and chicken",
+      "description": "Rice-heavy dinner",
+      "tag": "dinner",
+      "carbs_estimate": 70,
+      "meal_time": "2026-05-13T18:50:00.000Z",
+      "created_at": "2026-05-13T18:50:00.000Z"
+    },
+    {
+      "id": "m-010",
+      "title": "Dessert snack",
+      "description": "Cake after dinner",
+      "tag": "late_night",
+      "carbs_estimate": 36,
+      "meal_time": "2026-05-14T20:30:00.000Z",
+      "created_at": "2026-05-14T20:30:00.000Z"
+    }
+  ],
+  "wellness": [
+    {
+      "id": "w-001",
+      "mood": "good",
+      "stress_level": 2,
+      "sleep_quality": "good",
+      "symptoms": [],
+      "notes": "Calm day",
+      "recorded_at": "2026-05-11T21:30:00.000Z",
+      "created_at": "2026-05-11T21:30:00.000Z"
+    },
+    {
+      "id": "w-002",
+      "mood": "stressed",
+      "stress_level": 4,
+      "sleep_quality": "fair",
+      "symptoms": ["tired"],
+      "notes": "Busy workday",
+      "recorded_at": "2026-05-12T21:35:00.000Z",
+      "created_at": "2026-05-12T21:35:00.000Z"
+    },
+    {
+      "id": "w-003",
+      "mood": "calm",
+      "stress_level": 2,
+      "sleep_quality": "good",
+      "symptoms": [],
+      "notes": "More relaxed than yesterday",
+      "recorded_at": "2026-05-13T21:20:00.000Z",
+      "created_at": "2026-05-13T21:20:00.000Z"
+    },
+    {
+      "id": "w-004",
+      "mood": "low",
+      "stress_level": 5,
+      "sleep_quality": "poor",
+      "symptoms": ["shaky", "headache"],
+      "notes": "Poor sleep and afternoon low",
+      "recorded_at": "2026-05-14T21:45:00.000Z",
+      "created_at": "2026-05-14T21:45:00.000Z"
+    }
+  ],
+  "settings": {
+    "language": "en",
+    "theme": "light",
+    "targetRangeLow": 70,
+    "targetRangeHigh": 180
+  },
+  "exportDate": "2026-05-17T12:00:00.000Z"
+}

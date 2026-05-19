@@ -1,0 +1,84 @@
+{
+  "name": "SugarSense",
+  "short_name": "SugarSense",
+  "description": "Track your blood sugar and insulin doses with ease",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["health", "medical"],
+  "shortcuts": [
+    {
+      "name": "Add Glucose Reading",
+      "short_name": "Add Glucose",
+      "description": "Quickly add a glucose reading",
+      "url": "/add?tab=glucose",
+      "icons": [
+        {
+          "src": "/logo.png",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Add Insulin Dose",
+      "short_name": "Add Insulin",
+      "description": "Quickly add an insulin dose",
+      "url": "/add?tab=insulin",
+      "icons": [
+        {
+          "src": "/logo.png",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "View History",
+      "short_name": "History",
+      "description": "View your glucose and insulin history",
+      "url": "/history",
+      "icons": [
+        {
+          "src": "/logo.png",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
