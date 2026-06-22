@@ -1,4 +1,4 @@
-![SugarSense Dashboard](./public/screenshots/dashboard.png)
+![SugarSense Dashboard](https://github.com/codestcode/SugarSense/blob/main/Project%20Title.png)
 
 # SugarSense
 
