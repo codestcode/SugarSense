@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
-import { Home, Plus, History, BarChart3, Settings, Sparkles } from 'lucide-react';
+import { Home, Plus, History, BarChart3, Settings, Sparkles, Camera } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export const BottomNavigation: React.FC = () => {
@@ -20,6 +20,7 @@ export const BottomNavigation: React.FC = () => {
   const navItems = [
     { path: '/', label: t('nav.home'), icon: Home, activeClassName: 'bg-blue-600 text-white shadow-[0_10px_24px_-14px_rgba(37,99,235,0.9)] dark:bg-blue-500 dark:text-slate-950' },
     { path: '/add', label: t('nav.add'), icon: Plus, activeClassName: 'bg-emerald-600 text-white shadow-[0_10px_24px_-14px_rgba(5,150,105,0.9)] dark:bg-emerald-400 dark:text-slate-950' },
+    { path: '/add?mode=scan', label: 'Scan', icon: Camera, activeClassName: 'bg-cyan-600 text-white shadow-[0_10px_24px_-14px_rgba(8,145,178,0.9)] dark:bg-cyan-400 dark:text-slate-950' },
     { path: '/history', label: t('nav.history'), icon: History, activeClassName: 'bg-violet-600 text-white shadow-[0_10px_24px_-14px_rgba(124,58,237,0.9)] dark:bg-violet-400 dark:text-slate-950' },
     { path: '/stats', label: t('nav.stats'), icon: BarChart3, activeClassName: 'bg-amber-500 text-white shadow-[0_10px_24px_-14px_rgba(245,158,11,0.95)] dark:bg-amber-300 dark:text-slate-950' },
     { path: '/ai', label: 'AI', icon: Sparkles, activeClassName: 'bg-sky-600 text-white shadow-[0_10px_24px_-14px_rgba(2,132,199,0.95)] dark:bg-sky-400 dark:text-slate-950' },

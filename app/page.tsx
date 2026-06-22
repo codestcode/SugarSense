@@ -18,6 +18,7 @@ import {
   TrendingUp,
   Droplet,
   Syringe,
+  Camera,
   AlertCircle,
   Bell,
   X,
@@ -335,24 +336,33 @@ export default function DashboardPage() {
       </div>
 
       {/* Quick Actions */}
-      <div className="grid grid-cols-2 gap-4 mb-8">
+      <div className="grid grid-cols-3 gap-3 mb-8">
         <Link
           href="/add"
-          className="flex min-h-[112px] flex-col items-center justify-center gap-2 bg-blue-600 text-white py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors text-center"
+          className="flex min-h-[100px] flex-col items-center justify-center gap-2 bg-blue-600 text-white py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors text-center"
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/16">
-            <Droplet size={22} />
+          <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-white/16">
+            <Droplet size={20} />
           </span>
-          {t("glucose.title")}
+          <span className="text-xs">{t("glucose.title")}</span>
+        </Link>
+        <Link
+          href="/add?mode=scan"
+          className="flex min-h-[100px] flex-col items-center justify-center gap-2 bg-cyan-600 text-white py-4 rounded-xl font-semibold hover:bg-cyan-700 transition-colors text-center"
+        >
+          <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-white/16">
+            <Camera size={20} />
+          </span>
+          <span className="text-xs">Scan food</span>
         </Link>
         <Link
           href="/add"
-          className="flex min-h-[112px] flex-col items-center justify-center gap-2 bg-purple-600 text-white py-4 rounded-xl font-semibold hover:bg-purple-700 transition-colors text-center"
+          className="flex min-h-[100px] flex-col items-center justify-center gap-2 bg-purple-600 text-white py-4 rounded-xl font-semibold hover:bg-purple-700 transition-colors text-center"
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/16">
-            <Syringe size={22} />
+          <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-white/16">
+            <Syringe size={20} />
           </span>
-          {t("insulin.title")}
+          <span className="text-xs">{t("insulin.title")}</span>
         </Link>
       </div>
 

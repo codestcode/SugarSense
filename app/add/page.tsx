@@ -1,18 +1,30 @@
 'use client';
 
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { GlucoseForm } from '@/components/glucose/GlucoseForm';
 import { InsulinForm } from '@/components/insulin/InsulinForm';
+import { FoodAnalyzer } from '@/components/meal/FoodAnalyzer';
 import { MealForm } from '@/components/meal/MealForm';
 import { WellnessForm } from '@/components/wellness/WellnessForm';
 import { useToast } from '@/components/common/Toast';
-import { Droplet, HeartPulse, Salad, Syringe } from 'lucide-react';
+import { useMealStore } from '@/lib/store/mealStore';
+import { Camera, Droplet, HeartPulse, Salad, Syringe } from 'lucide-react';
 
 export default function AddPage() {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<'glucose' | 'insulin' | 'meal' | 'wellness'>('glucose');
+  const [mealMode, setMealMode] = useState<'manual' | 'scan'>('manual');
   const { showToast } = useToast();
+  const { addMeal } = useMealStore();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('mode') === 'scan') {
+      setActiveTab('meal');
+      setMealMode('scan');
+    }
+  }, []);
 
   const handleGlucoseSuccess = () => {
     showToast(t('glucose.added'), 'success');
@@ -90,7 +102,52 @@ export default function AddPage() {
       <div className="glass3d rounded-2xl border border-gray-100 bg-white p-6 dark:border-white/10 dark:bg-zinc-900">
         {activeTab === 'glucose' ? <GlucoseForm onSuccess={handleGlucoseSuccess} /> : null}
         {activeTab === 'insulin' ? <InsulinForm onSuccess={handleInsulinSuccess} /> : null}
-        {activeTab === 'meal' ? <MealForm onSuccess={handleMealSuccess} /> : null}
+        {activeTab === 'meal' ? (
+          <div className="space-y-4">
+            <div className="flex rounded-xl bg-gray-100 p-1 dark:bg-white/10">
+              <button
+                type="button"
+                onClick={() => setMealMode('manual')}
+                className={`flex-1 rounded-lg py-2 text-sm font-medium transition-colors ${
+                  mealMode === 'manual'
+                    ? 'bg-white text-gray-900 shadow-sm dark:bg-zinc-800 dark:text-white'
+                    : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'
+                }`}
+              >
+                Manual
+              </button>
+              <button
+                type="button"
+                onClick={() => setMealMode('scan')}
+                className={`flex items-center justify-center gap-1.5 flex-1 rounded-lg py-2 text-sm font-medium transition-colors ${
+                  mealMode === 'scan'
+                    ? 'bg-white text-gray-900 shadow-sm dark:bg-zinc-800 dark:text-white'
+                    : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'
+                }`}
+              >
+                <Camera size={16} />
+                Scan food
+              </button>
+            </div>
+
+            {mealMode === 'manual' ? (
+              <MealForm onSuccess={handleMealSuccess} />
+            ) : (
+              <FoodAnalyzer
+                onSaveMeal={(title, description, carbs) => {
+                  addMeal({
+                    title,
+                    description,
+                    tag: 'snack',
+                    carbs_estimate: carbs,
+                    meal_time: new Date().toISOString(),
+                  });
+                  showToast('Meal added from scan', 'success');
+                }}
+              />
+            )}
+          </div>
+        ) : null}
         {activeTab === 'wellness' ? <WellnessForm onSuccess={handleWellnessSuccess} /> : null}
       </div>
     </main>

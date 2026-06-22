@@ -153,3 +153,54 @@ export interface SettingsState {
   updateSettings: (newSettings: Partial<AppSettings>) => void;
   getSettings: () => AppSettings;
 }
+
+// Meal Scan Types
+export interface ScannedFoodItem {
+  name: string;
+  portion_description: string;
+  estimated_grams: number;
+  confidence: number;
+}
+
+export interface FoodNutrition {
+  carbs_per_100g: number;
+  carbs_total: number;
+  source: string;
+}
+
+export interface ScannedFoodWithNutrition extends ScannedFoodItem {
+  nutrition?: FoodNutrition;
+}
+
+export interface SugarImpact {
+  level: 'minimal' | 'moderate' | 'significant' | 'high';
+  description: string;
+  total_carbs: number;
+  food_count: number;
+}
+
+export interface MealScanResult {
+  foods: ScannedFoodWithNutrition[];
+  meal_summary: string;
+  overall_confidence: number;
+  notes: string[];
+  image_hash?: string;
+  scanned_at: string;
+  total_carbs?: number;
+  sugar_impact?: SugarImpact;
+}
+
+export interface MealScanRecord {
+  id: string;
+  result: MealScanResult;
+  image_hash: string;
+  created_at: string;
+}
+
+export interface ScanState {
+  recentScans: MealScanRecord[];
+  cache: Record<string, MealScanResult>;
+  addScan: (record: MealScanRecord) => void;
+  getCached: (hash: string) => MealScanResult | undefined;
+  clearCache: () => void;
+}
