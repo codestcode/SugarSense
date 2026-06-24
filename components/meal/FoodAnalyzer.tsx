@@ -228,6 +228,7 @@ export const FoodAnalyzer: React.FC<FoodAnalyzerProps> = ({ onSaveMeal }) => {
               {result.foods.length === 0 ? (
                 <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-center text-sm text-gray-500 dark:border-amber-500/20 dark:bg-amber-500/10 dark:text-gray-400">
                   <p className="font-medium text-amber-800 dark:text-amber-200">No foods identified</p>
+                  <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">Please retake the photo in better lighting and position</p>
                   {result.notes.map((n, i) => (
                     <p key={i} className="mt-1 text-xs text-amber-600 dark:text-amber-400">{n}</p>
                   ))}
